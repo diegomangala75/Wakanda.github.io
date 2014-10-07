@@ -1,0 +1,31 @@
+@import 'colors';
+@import 'helpers';
+
+
+.button{
+	transition: all 100ms ease;
+	background-color: $green-light;
+	border: none;
+	border-radius: 0.3rem;
+	box-shadow: 0 4px 0 $green-dark;
+	padding: 0.5rem 1rem;
+	color: white;
+	font-weight: 100;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	
+	&:hover{
+		transition: all 100ms ease;
+		box-shadow: 0 1px 0 $green-dark;
+		transform: translateY(3px);
+		backface-visibility: hidden;
+	}
+}
+
+hr{
+	border: none;
+	border-top: 2px solid black;
+	height: 0;
+	width: 10rem;
+}

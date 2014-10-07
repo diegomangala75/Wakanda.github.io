@@ -1,0 +1,20 @@
+// Helpers
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+%clearfix{
+	@include clearfix;
+}
+
+@mixin responsiveImages{
+	img{
+		max-width: 100%;
+		height: auto;
+		box-sizing: border-box;
+	}
+}
