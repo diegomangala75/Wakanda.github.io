@@ -23,7 +23,6 @@ $not-desktop: (max-width 1100px);
 
 // GRID -------------------------------------------------------------------------------------------------------------
 
-
 // index.php
 .github-sources{
 	@extend %container;
@@ -34,3 +33,19 @@ $not-desktop: (max-width 1100px);
 		}
 	}
 }
+
+.ng-wakanda{
+	@extend %container;
+}
+// .ng-europe{
+// 	@include span(2 of 4);
+// }
+// .wakanda-pack{
+// 	@include span(2 of 4 last);
+// }
+// .wakanda-pack-logo{
+// 	@include span(1 of 3);
+// }
+// .wakanda-pack-txt{
+// 	@include span(2 of 3 last);
+// }
