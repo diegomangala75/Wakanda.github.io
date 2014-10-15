@@ -319,25 +319,23 @@ h3{
 }
 .ng-europe,
 .wakanda-pack{
+	@include responsiveImages;
 	display: inline-block;
 	vertical-align: middle;
 	width: 49%;
+
+	@include breakpoint($mobile-small) {
+		display: block !important;
+	}
+	@include breakpoint($mobile-large) {
+		display: block !important;
+	}
 }
 .ng-europe{
 	.ng-euro-logo{
 		@include responsiveImages;
 		margin-top: 1rem;
 	}	
-}
-.wakanda-pack-text{
-	text-align: left;
-}
-.wakanda-pack-logo{
-	float: left;
-
-	img{
-		margin-right: 2rem;
-	}
 }
 
 // FOOTER ----------------------------------------------------------------------------

@@ -9284,6 +9284,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/NG-Wakanda-Pack.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 306395,
+		"inputAbbreviatedPath": "\/img\/NG-Wakanda-Pack.png",
+		"outputAbbreviatedPath": "\/img\/NG-Wakanda-Pack.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/rss-lnk.png": {
 		"fileType": 32768,
 		"ignore": 0,
