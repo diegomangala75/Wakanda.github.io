@@ -186,7 +186,7 @@
 				settings.message += 'use are essential for parts of the site to operate and have already been set.';
 			} else {
 				// Implied consent message
-				settings.message = 'We have placed cookies on your computer to help make this website better.';
+				settings.message = 'Click I Agree to accept cookies and go directly to the site or click on More Information to see detailed descriptions of the types of cookies and choose whether to accept certain cookies while on the site.';
 			}		
 		}	
 		html += settings.message;
@@ -205,7 +205,7 @@
 			// Implied consent disclosure
 			html += scriptsDisclosure + ' More details can be found in our <a style="color:'+ settings.linkColor + ';';
 			html += 'font-weight:bold;font-family:' + settings.fontFamily + ';font-size:' + settings.fontSize + ';" href="'+ settings.privacyPolicyUri + '">privacy policy</a>.';
-			html += '<div style="margin-top:5px;"><input type="submit" name="impliedsubmit" id="impliedsubmit" value="Do not show this message again"/></div></div>';	
+			html += '<div style="margin-top:5px;"><input type="submit" name="impliedsubmit" id="impliedsubmit" value="I Agree"/></div></div>';	
 		}		
 		html += '</div></div>';
 		$('body').append(html);

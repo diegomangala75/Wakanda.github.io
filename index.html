@@ -15,7 +15,7 @@
 	
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="jquery.cookiesdirective.js"></script>
+	<script type="text/javascript" src="js/jquery.cookiesdirective.js"></script>
 </head>
 <body>
 
@@ -174,14 +174,16 @@
 		});
 	}
 	
-	$.cookiesDirective({
-		privacyPolicyUri: 'cookie-policy.html',
-		explicitConsent: false,
-		position : 'bottom',
-		scriptWrapper: startAnalytics, 
-		cookieScripts: 'Google Analytics, My Stats Ultimate ', 
-		backgroundColor: '#52B54A',
-		linkColor: '#ffffff'
+	$(document).ready(function(){
+		$.cookiesDirective({
+			privacyPolicyUri: 'cookie-policy.html',
+			explicitConsent: false,
+			position : 'bottom',
+			scriptWrapper: startAnalytics, 
+			cookieScripts: 'Analytics', 
+			backgroundColor: '#333',
+			linkColor: '#ffffff'
+		});
 	});
 </script>
 </html>
