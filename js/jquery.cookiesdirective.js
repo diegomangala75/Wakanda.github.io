@@ -12,7 +12,7 @@
 			//Options
 			explicitConsent: true,
 			position: 'top',
-			duration: 10,
+			duration: 0,
 			limit: 0,
 			message: null,				
 			cookieScripts: null,
@@ -205,7 +205,7 @@
 			// Implied consent disclosure
 			html += scriptsDisclosure + ' More details can be found in our <a style="color:'+ settings.linkColor + ';';
 			html += 'font-weight:bold;font-family:' + settings.fontFamily + ';font-size:' + settings.fontSize + ';" href="'+ settings.privacyPolicyUri + '">privacy policy</a>.';
-			html += '<div style="margin-top:5px;"><input type="submit" name="impliedsubmit" id="impliedsubmit" value="I Agree"/></div></div>';	
+			html += '<div style="margin-top:5px;"><input type="submit" name="impliedsubmit" id="impliedsubmit" style="background-color:black;" value="I Agree"/></div></div>';	
 		}		
 		html += '</div></div>';
 		$('body').append(html);
