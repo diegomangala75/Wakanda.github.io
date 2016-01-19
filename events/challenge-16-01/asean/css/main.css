@@ -271,21 +271,21 @@ p {
   margin-bottom: 1em;
 }
 
-/* SPEAKER */
+/* USE CASES */
 
-#speakers h2 {
+#useCases h2 {
 	margin:10px 0;
 }
 
-/* SCHEDULE */
+/* WINNERS */
 
-#schedule {
+#winners {
   background:url(../img/testimonial-bg.png) bottom center no-repeat fixed;
   background-size:cover;
   color:#fff;
 }
 
-#schedule .container {
+#winners .container {
   background-color:rgba(0,0,0,.5);
   margin-top:50px;
   margin-bottom:50px;
@@ -293,7 +293,7 @@ p {
 }
 
 
-/* REGISTER */
+/* WAKANDA APP FACTORY */
 
 #wakandaAppFactory {
 	padding:70px 0;
@@ -304,6 +304,11 @@ p {
   color:#313131;
 }
 
+/* GET STARTED */
+
+#getstarted h2 {
+  margin:1em 0 0 0;
+}
 
 /* register form */
 
