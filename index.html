@@ -158,32 +158,36 @@
 			</div>
 		</footer>
 		<!-- End footer -->
-		<div id="analytics"></div>
 	</div>
 	<!-- End Container -->
 </body>
+
 <script>
 	$(".btn-download").click(function(){
 		$("#downloads").toggle();
 	});
-	
-	var startAnalytics = function(){
-		$.cookiesDirective.loadScript({
-			uri:'./scripts/analytics.js',
-			appendTo: 'analytics'
-		});
-	}
-	
-	$(document).ready(function(){
-		$.cookiesDirective({
-			privacyPolicyUri: 'cookie-policy.html',
-			explicitConsent: false,
-			position : 'bottom',
-			scriptWrapper: startAnalytics, 
-			cookieScripts: 'Analytics', 
-			backgroundColor: '#333',
-			linkColor: '#ffffff'
-		});
-	});
+</script>
+
+<!-- Analytics -->
+<script id="analytics"></script>
+<script>
+    var startAnalytics = function(){
+        $.cookiesDirective.loadScript({
+            uri:'/scripts/analytics.js',
+            appendTo: 'analytics'
+        });
+    }
+    
+    $(document).ready(function(){
+        $.cookiesDirective({
+            privacyPolicyUri: '/cookie-policy.html',
+            explicitConsent: false,
+            position : 'bottom',
+            scriptWrapper: startAnalytics, 
+            cookieScripts: 'Analytics', 
+            backgroundColor: '#333',
+            linkColor: '#ffffff'
+        });
+    });
 </script>
 </html>
