@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Wakanda Dev Challenge</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cookiesdirective.js"></script>
 </head>
 
 <body>
@@ -100,5 +102,26 @@
     <!--End mc_embed_signup-->
 
 </body>
-
+<!-- Analytics -->
+<script id="analytics"></script>
+<script>
+    var startAnalytics = function(){
+        $.cookiesDirective.loadScript({
+            uri:'/scripts/analytics.js',
+            appendTo: 'analytics'
+        });
+    }
+    
+    $(document).ready(function(){
+        $.cookiesDirective({
+            privacyPolicyUri: '/cookie-policy.html',
+            explicitConsent: false,
+            position : 'bottom',
+            scriptWrapper: startAnalytics, 
+            cookieScripts: 'Analytics', 
+            backgroundColor: '#333',
+            linkColor: '#ffffff'
+        });
+    });
+</script>
 </html>
