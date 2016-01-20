@@ -49,10 +49,9 @@
 			}		
 			
 			// If we don't require explicit consent, load up our script wrapping function
-			/*if(!settings.explicitConsent) {
+			if(!settings.explicitConsent) {
 				settings.scriptWrapper.call();
-                
-			}*/	
+			}	
 		} else {
 			// Cookies accepted, load script wrapping function
 			settings.scriptWrapper.call();
@@ -187,7 +186,7 @@
 				settings.message += 'use are essential for parts of the site to operate and have already been set.';
 			} else {
 				// Implied consent message
-				settings.message = 'Click I Agree to accept cookies and go directly to the site. If you want a detailed description of the types of cookies and choose whether to accept certain cookies while on the site';
+				settings.message = 'This site uses cookies. By continuing to browse the site, you are agreeing to our use of cookies.';
 			}		
 		}	
 		html += settings.message;
@@ -204,9 +203,9 @@
 		
 		} else {
 			// Implied consent disclosure
-			html += ' more details can be found in our <a style="color:'+ settings.linkColor + ';';
+			html += ' More details can be found in our <a style="color:'+ settings.linkColor + ';';
 			html += 'font-weight:bold;font-family:' + settings.fontFamily + ';font-size:' + settings.fontSize + ';" href="'+ settings.privacyPolicyUri + '">privacy policy</a>.';
-			html += '<div style="margin-top:5px;"><input type="submit" name="impliedsubmit" id="impliedsubmit" style="background-color:black;" value="I Agree"/></div></div>';	
+			html += '<div style="margin-top:5px;"><input type="submit" name="impliedsubmit" id="impliedsubmit" style="background-color:black;" value="I Understand"/></div></div>';	
 		}		
 		html += '</div></div>';
 		$('body').append(html);
