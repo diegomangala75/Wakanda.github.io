@@ -49,8 +49,9 @@
 			}		
 			
 			// If we don't require explicit consent, load up our script wrapping function
-			if(!settings.explicitConsent) {
+			/*if(!settings.explicitConsent) {
 				settings.scriptWrapper.call();
+                */
 			}	
 		} else {
 			// Cookies accepted, load script wrapping function
