@@ -11,27 +11,34 @@ jQuery(document).ready(function($) {
 		callbackBefore: function ( toggle, anchor ) {}, // Function to run before scrolling
 		callbackAfter: function ( toggle, anchor ) {} // Function to run after scrolling
 	 });
-	 
 	  
-	//COUNTDOWN TIMER
-	var newYear = new Date(); 
-    newYear = new Date(newYear.getFullYear() + 1, 1 - 1, 1); 
-    $('#countdown').countdown({until: new Date(2014, 12-1, 18)}); // enter event day
+    var timer;
+    var now         = new Date();
+    var eventStart  = new Date(Date.UTC(2016,1,13,4,30,0)); // 4:30 + 5:30 = 10:00 AM 
+    var eventFinish = new Date(Date.UTC(2016,1,14,4,30,0)); // 4:30 + 5:30 = 10:00 AM 
+    /*var eventStart  = new Date(2016,1,12,13,44,0); // 4:30 + 5:30 = 10:00 AM 
+    var eventFinish = new Date(2016,1,12,13,45,0); // 4:30 + 5:30 = 10:00 AM */
     
-    $('#removeCountdown').toggle(
-        function() {
-            $(this).text('Re-attach'); 
-            $('#defaultCountdown').countdown('destroy'); 
-        }, 
-        function() { 
-            $(this).text('Remove'); 
-            $('#defaultCountdown').countdown({until: newYear}); 
-        }
-    );
-	  
-	//MILESTONE
-    $('.timer').countTo();
-	
+    if(now < eventStart){
+        $(".hide-before-event-start").hide();
+        $(".hide-before-event-end").hide();
+         timer = new CountdownTimer('event-counter',eventStart,'', function(){
+             window.location.reload();
+         });
+         timer.countDown();      
+    } else if(now > eventFinish){
+        $(".hide-before-event-end").show();
+        $(".hide-after-event-end").hide();
+        $(".hide-after-event-start").hide();      
+    }else{
+        $(".hide-after-event-start").hide();
+        $(".hide-before-event-end").hide();
+        $(".hide-before-event-start").show();
+        timer = new CountdownTimer('event-counter',eventFinish,'', function(){
+             window.location.reload();
+        }); 
+        timer.countDown();
+    }
 	
 	//MAGNIFIC POPUP LOAD CONTENT VIA AJAX
 	$('.speaker-detail').magnificPopup({type: 'ajax'});
