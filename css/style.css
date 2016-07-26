@@ -8258,3 +8258,50 @@ footer p.copyright {
     margin-bottom: 2px;
   }
 }
+/*Newsletter*/
+.newsletter {
+    background: #FFCF27 none repeat scroll 0 0;
+    color: #fff;
+    padding: 60px 0;
+}
+.newsletter p {
+    background: rgba(0, 0, 0, 0) url("http://www.wakanda.io/sites/all/themes/wakanda/images/letter.png") no-repeat scroll 0 0;
+    color: #fff;
+    font-size: 22px;
+    min-height: 69px;
+    padding-left: 90px;
+}
+.newsletter p span {
+    color: #fff;
+    display: block;
+    font-weight: bold;
+ 
+}
+.newsletter #mc_embed_signup {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    position: relative;
+}
+.newsletter #mc_embed_signup input.email {
+    border: medium none;
+    border-radius: 0;
+    height: 40px;
+    margin-right: 10px;
+    width: 222px;
+    margin-bottom:10px; 
+    color:#ababab;
+}
+.newsletter #mc_embed_signup #mc-embedded-subscribe {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    font-size: 15px;
+    height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 146px;
+}
+.newsletter #mc_embed_signup #mc-embedded-subscribe:hover {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #FFCF27;
+    color: #FFCF27;
+}
